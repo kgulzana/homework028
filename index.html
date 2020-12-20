@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <div class="modal-backdrop1"></div>
+      <a href="#" class="js-open-login">OPEN MODAL</a>
+    </header>
+    <div class="modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <p class="text">Here I am! Now <br>close me</p>
+        <form id="login-form" action="">
+          <button type="submit" class="btn">CLOSE</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      let openModalBtn = document.querySelector(".modal-backdrop1");
+      let modal = document.querySelector(".modal");
+
+      let modalBackdrop = document.querySelector(".modal-backdrop");
+
+      openModalBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        modal.classList.add("open");
+      });
+
+      let closeModalBtn = document.querySelector(".btn");
+
+      closeModalBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        modal.classList.remove("open");
+      });
+
+      modalBackdrop.addEventListener("click", function (e) {
+          e.preventDefault();
+
+           modal.classList.remove("open");
+      });
+
+
+    </script>
+  </body>
+</html>

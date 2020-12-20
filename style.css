@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.open {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.btn {
+  background-color: #5d86c3;
+  width: 186px;
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  margin-top: 23px;
+}
+
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  height: 230px;
+}
+
+.modal-backdrop1 {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  height: 230px;
+}
+
+
+.modal-content {
+  background: #ffffff;
+  position: relative;
+  z-index: 11;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  width: 189px;
+  height: 112px;
+  margin-top: 40px;
+}
+
+.js-open-login {
+    text-align: center;
+    margin-top: 101px;
+    margin-right: 92px;
+    border: 1px solid grey;
+    text-decoration: none;
+    padding: 7px;
+    background-color: #5f9bf5;
+    color: white;
+    border-radius: 6px;
+}
